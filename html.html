@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<head>
+  <title>Random Website</title>
+</head>
+<style>
+#jumpscare {position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; cursor: pointer; visibility: hidden;}
+html{
+    background: url(https://cdn.discordapp.com/attachments/836562838855614484/1147446400678907904/image.png?ex=653cc4bc&is=652a4fbc&hm=132a2ad7832f73fe22976dbc355a800a57d187dc8c37535ff67e2f9f96b34ac7&)
+}
+</style>
+<body>
+<input type="button" onclick="jumpscare();" value="click me"/>
+<img id="jumpscare" src="./received_704343928269102.png"/>
+<audio id="scream" src="./jumpscareAudio.mp3"/>
+<script>
+function jumpscare() {
+var jumpscare = document.getElementById("jumpscare");
+jumpscare.style.visibility="visible";
+var audio = document.getElementById("scream");
+  audio.play();
+}
+</script>
+
+
+</body>
+
+</html>
+
